@@ -13,6 +13,15 @@
 }
 
 .nav_menu {
+  width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: space-evenly;
+  .el-menu {
+    background: #00000000;
+    border: #00000000;
+  }
+}
+
+.title {
+  color: white
 }
