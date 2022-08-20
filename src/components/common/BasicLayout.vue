@@ -1,8 +1,12 @@
 <template>
   <div class="home-background">
-    <navigation-menu style="position:absolute"/>
-    <slot />
-    <div class="home-color">
+    <div class="color-area">
+      <div class="content-area">
+        <navigation-menu />
+        <div class="main-content">
+          <slot />
+        </div>
+      </div>
     </div>
   </div>
 </template>

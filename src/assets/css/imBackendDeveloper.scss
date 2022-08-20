@@ -4,6 +4,23 @@
   overflow-y: auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  .color-area {
+    width: 100%;
+    background: #6998AB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .content-area {
+      width: 50em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .main-content {
+        height: 20em;
+      }
+    }
+  }
 }
 
 .home-color {
@@ -12,13 +29,31 @@
   background: #6998AB;
 }
 
-.nav_menu {
+.menu_layout {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
-  .el-menu {
-    background: #00000000;
-    border: #00000000;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_menu {
+  width: fit-content;
+  list-style: none;
+  display: flex;
+  li:not(:last-of-type) {
+    margin-right: 40px;
+  }
+  li {
+    color: white;
+    opacity:80%;
+    &:hover {
+      opacity: 100%;
+      cursor: pointer;
+    }
+  }
+  .focus-menu {
+    opacity: 100%;
+    text-decoration: underline;
   }
 }
 
