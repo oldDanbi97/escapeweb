@@ -3,6 +3,7 @@ import { router } from './router';
 import store from "./store";
 
 import App from './App.vue'
+import '@/assets/css/reset.scss';
 import '@/assets/css/imBackendDeveloper.scss';
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
