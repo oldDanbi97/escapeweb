@@ -1,21 +1,17 @@
 <template>
-  <div class="home-background">
-    <div class="color-area">
-      <div class="content-area">
-        <navigation-menu />
-        <div class="main-content">
-          <slot />
-        </div>
-      </div>
-    </div>
-  </div>
+  <ibd-header />
+  <ibd-content>
+    <slot></slot>
+  </ibd-content>
 </template>
 <script>
-import NavigationMenu from '@/components/home/NavigationMenu.vue'
+import IbdHeader from '@/components/common/IbdHeader.vue'
+import IbdContent from '@/components/common/IbdContent.vue'
 
 export default {
   components: {
-    NavigationMenu
+    IbdHeader,
+    IbdContent
   }    
 }
 </script>

@@ -1,17 +1,13 @@
 <template>
-  <div class="menu_layout">
-    <div>
-      <a class="title"><h1>Title</h1></a>
-    </div>
-    <ul class="nav_menu">
-      <li
-        v-for="menu in menuList"
-        :key="menu.key"
-      >
-        {{ menu.menuNm }}
-      </li>
-    </ul>
-  </div>
+  <ul class="menu__list">
+    <li
+      class="menu__item t3"
+      v-for="menu in menuList"
+      :key="menu.key"
+    >
+      {{ menu.menuNm }}
+    </li>
+  </ul>
 </template>
 <script>
 export default {
@@ -50,4 +46,12 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+  .menu__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .menu__item {
+      margin-right: 52px;
+    }
+  }
 </style>

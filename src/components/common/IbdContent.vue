@@ -1,14 +1,11 @@
 <template>
-  <div>
-  </div>
+  <slot></slot>
 </template>
 <script>
-
 export default {
-  components: {
-  }
+    
 }
 </script>
-<style lang="">
+<style lang="scss">
     
 </style>
