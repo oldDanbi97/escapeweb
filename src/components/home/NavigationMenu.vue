@@ -52,6 +52,7 @@ export default {
     align-items: center;
     .menu__item {
       margin-right: 52px;
+      cursor: pointer;
     }
   }
 </style>

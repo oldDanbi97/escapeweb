@@ -1,5 +1,7 @@
 <template>
-  <slot></slot>
+  <article class="article">
+    <slot></slot>
+  </article>
 </template>
 <script>
 export default {
@@ -7,5 +9,6 @@ export default {
 }
 </script>
 <style lang="scss">
-    
+.article {
+}
 </style>

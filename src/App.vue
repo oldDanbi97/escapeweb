@@ -1,9 +1,7 @@
 <template>
-  <div>
-    <basic-layout>
-      <router-view />
-    </basic-layout>
-  </div>
+  <basic-layout>
+    <router-view />
+  </basic-layout>
 </template>
 
 <script>
